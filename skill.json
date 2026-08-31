@@ -1,0 +1,41 @@
+{
+  "name": "genpark-pedagogical-lesson-plan-curriculum-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Pedagogical lesson plan curriculum synthesizer structuring Bloom taxonomy objectives and interactive lab exercises.",
+  "author": "genpark",
+  "category": "education-tech",
+  "tags": [
+    "lesson-plan-generator",
+    "curriculum-synthesizer",
+    "pedagogy-ai",
+    "bloom-taxonomy",
+    "stem-education"
+  ],
+  "inputs": {
+    "subject_topic": {
+      "type": "string"
+    },
+    "target_grade_level": {
+      "type": "string"
+    },
+    "session_duration_minutes": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "curriculum_id": {
+      "type": "string"
+    },
+    "learning_objectives_count": {
+      "type": "integer"
+    },
+    "bloom_taxonomy_level": {
+      "type": "string"
+    },
+    "curriculum_export_markdown_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
